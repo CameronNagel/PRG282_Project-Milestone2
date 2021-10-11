@@ -46,114 +46,114 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PresentationLayer\crudExceptions.cs">
+    <Compile Include="Presentation Layer\crudExceptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\crudExceptions.Designer.cs">
+    <Compile Include="Presentation Layer\crudExceptions.Designer.cs">
       <DependentUpon>crudExceptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\crudStudentAlreadyExistrs.cs">
+    <Compile Include="Presentation Layer\crudStudentAlreadyExistrs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\crudStudentAlreadyExistrs.Designer.cs">
+    <Compile Include="Presentation Layer\crudStudentAlreadyExistrs.Designer.cs">
       <DependentUpon>crudStudentAlreadyExistrs.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\crudSuccessful.cs">
+    <Compile Include="Presentation Layer\crudSuccessful.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\crudSuccessful.Designer.cs">
+    <Compile Include="Presentation Layer\crudSuccessful.Designer.cs">
       <DependentUpon>crudSuccessful.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\Form1.cs">
+    <Compile Include="Presentation Layer\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\Form1.Designer.cs">
+    <Compile Include="Presentation Layer\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\frmAddStudent.cs">
+    <Compile Include="Presentation Layer\frmAddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\frmAddStudent.Designer.cs">
+    <Compile Include="Presentation Layer\frmAddStudent.Designer.cs">
       <DependentUpon>frmAddStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\frmAddStudentModules.cs">
+    <Compile Include="Presentation Layer\frmAddStudentModules.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\frmAddStudentModules.Designer.cs">
+    <Compile Include="Presentation Layer\frmAddStudentModules.Designer.cs">
       <DependentUpon>frmAddStudentModules.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\crudSignup.cs">
+    <Compile Include="Presentation Layer\crudSignup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\crudSignup.Designer.cs">
+    <Compile Include="Presentation Layer\crudSignup.Designer.cs">
       <DependentUpon>crudSignup.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\loginExceptions.cs">
+    <Compile Include="Presentation Layer\loginExceptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\loginExceptions.Designer.cs">
+    <Compile Include="Presentation Layer\loginExceptions.Designer.cs">
       <DependentUpon>loginExceptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\frmGUI.cs">
+    <Compile Include="Presentation Layer\frmGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\frmGUI.Designer.cs">
+    <Compile Include="Presentation Layer\frmGUI.Designer.cs">
       <DependentUpon>frmGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\frmLogin.cs">
+    <Compile Include="Presentation Layer\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\frmLogin.Designer.cs">
+    <Compile Include="Presentation Layer\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\frmSignUp.cs">
+    <Compile Include="Presentation Layer\frmSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\frmSignUp.Designer.cs">
+    <Compile Include="Presentation Layer\frmSignUp.Designer.cs">
       <DependentUpon>frmSignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\loginAccountCreated.cs">
+    <Compile Include="Presentation Layer\loginAccountCreated.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\loginAccountCreated.Designer.cs">
+    <Compile Include="Presentation Layer\loginAccountCreated.Designer.cs">
       <DependentUpon>loginAccountCreated.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PresentationLayer\crudExceptions.resx">
+    <EmbeddedResource Include="Presentation Layer\crudExceptions.resx">
       <DependentUpon>crudExceptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\crudStudentAlreadyExistrs.resx">
+    <EmbeddedResource Include="Presentation Layer\crudStudentAlreadyExistrs.resx">
       <DependentUpon>crudStudentAlreadyExistrs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\crudSuccessful.resx">
+    <EmbeddedResource Include="Presentation Layer\crudSuccessful.resx">
       <DependentUpon>crudSuccessful.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\Form1.resx">
+    <EmbeddedResource Include="Presentation Layer\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\frmAddStudent.resx">
+    <EmbeddedResource Include="Presentation Layer\frmAddStudent.resx">
       <DependentUpon>frmAddStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\frmAddStudentModules.resx">
+    <EmbeddedResource Include="Presentation Layer\frmAddStudentModules.resx">
       <DependentUpon>frmAddStudentModules.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\crudSignup.resx">
+    <EmbeddedResource Include="Presentation Layer\crudSignup.resx">
       <DependentUpon>crudSignup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\loginExceptions.resx">
+    <EmbeddedResource Include="Presentation Layer\loginExceptions.resx">
       <DependentUpon>loginExceptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\frmGUI.resx">
+    <EmbeddedResource Include="Presentation Layer\frmGUI.resx">
       <DependentUpon>frmGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\frmLogin.resx">
+    <EmbeddedResource Include="Presentation Layer\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\frmSignUp.resx">
+    <EmbeddedResource Include="Presentation Layer\frmSignUp.resx">
       <DependentUpon>frmSignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\loginAccountCreated.resx">
+    <EmbeddedResource Include="Presentation Layer\loginAccountCreated.resx">
       <DependentUpon>loginAccountCreated.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -241,6 +241,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\caution_CRUD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data Access Layer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
