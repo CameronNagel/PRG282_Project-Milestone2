@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC5A499E-3A3C-4E34-9A2C-C17B0BE239F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PRG282_Project</RootNamespace>
+    <AssemblyName>PRG282_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PresentationLayer\crudExceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\crudExceptions.Designer.cs">
+      <DependentUpon>crudExceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\crudStudentAlreadyExistrs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\crudStudentAlreadyExistrs.Designer.cs">
+      <DependentUpon>crudStudentAlreadyExistrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\crudSuccessful.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\crudSuccessful.Designer.cs">
+      <DependentUpon>crudSuccessful.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmAddStudent.Designer.cs">
+      <DependentUpon>frmAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmAddStudentModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmAddStudentModules.Designer.cs">
+      <DependentUpon>frmAddStudentModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\crudSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\crudSignup.Designer.cs">
+      <DependentUpon>crudSignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\loginExceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\loginExceptions.Designer.cs">
+      <DependentUpon>loginExceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmGUI.Designer.cs">
+      <DependentUpon>frmGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\loginAccountCreated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\loginAccountCreated.Designer.cs">
+      <DependentUpon>loginAccountCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PresentationLayer\crudExceptions.resx">
+      <DependentUpon>crudExceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\crudStudentAlreadyExistrs.resx">
+      <DependentUpon>crudStudentAlreadyExistrs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\crudSuccessful.resx">
+      <DependentUpon>crudSuccessful.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmAddStudent.resx">
+      <DependentUpon>frmAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmAddStudentModules.resx">
+      <DependentUpon>frmAddStudentModules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\crudSignup.resx">
+      <DependentUpon>crudSignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\loginExceptions.resx">
+      <DependentUpon>loginExceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmGUI.resx">
+      <DependentUpon>frmGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\loginAccountCreated.resx">
+      <DependentUpon>loginAccountCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\splash_screen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bc_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\loading_bar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Hidepassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Seepassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\robot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\robot_waving.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Motion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\signUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Robot_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\robot_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sphere.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\GUI_Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\CloseApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\caution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\robot_5_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\caution_CRUD.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
