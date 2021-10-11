@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Access Layer\FileHandler.cs" />
     <Compile Include="Presentation Layer\crudExceptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,8 +243,6 @@
   <ItemGroup>
     <None Include="images\caution_CRUD.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data Access Layer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
