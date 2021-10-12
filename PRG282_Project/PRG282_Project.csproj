@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogicLayer\Validation.cs" />
+    <Compile Include="DataLayer\FileHandler.cs" />
     <Compile Include="PresentationLayer\crudExceptions.cs">
       <SubType>Form</SubType>
     </Compile>
