@@ -42,7 +42,7 @@ namespace PRG282_Project.PresentationLayer
             this.pictureBox1.Image = global::PRG282_Project.Properties.Resources.loading_bar1;
             this.pictureBox1.Location = new System.Drawing.Point(-12, -7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(424, 267);
+            this.pictureBox1.Size = new System.Drawing.Size(414, 268);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -86,12 +86,12 @@ namespace PRG282_Project.PresentationLayer
             this.lblInvalidPassword.TabIndex = 32;
             this.lblInvalidPassword.Text = "Account created\r\nsuccessfully :)";
             // 
-            // frmUserAddedSuccessfully
+            // loginAccountCreated
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(153)))), ((int)(((byte)(176)))));
-            this.ClientSize = new System.Drawing.Size(377, 216);
+            this.ClientSize = new System.Drawing.Size(393, 255);
             this.Controls.Add(this.lblInvalidPassword);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
@@ -100,7 +100,8 @@ namespace PRG282_Project.PresentationLayer
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(393, 255);
             this.MinimumSize = new System.Drawing.Size(393, 255);
-            this.Name = "frmUserAddedSuccessfully";
+            this.Name = "loginAccountCreated";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUserAddedSuccessfully";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
