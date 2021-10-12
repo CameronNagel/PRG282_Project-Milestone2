@@ -40,5 +40,18 @@ namespace PRG282_Project
         {
 
         }
+
+        private void frmExceptions_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public void UserAlreadyExists(string message)
+        {
+            lblUserAlreadyExists.Text = message;
+            lblUserAlreadyExists.Visible = true;
+        }
+
     }
 }

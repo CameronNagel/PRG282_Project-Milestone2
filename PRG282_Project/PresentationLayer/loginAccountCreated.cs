@@ -20,13 +20,11 @@ namespace PRG282_Project.PresentationLayer
         private void button1_Click(object sender, EventArgs e)
         {
 
-            frmSignUp frmSignUpScreen = new frmSignUp();
-            frmSignUpScreen.Hide();
-
-            frmLogin frmLoginScreen = new frmLogin();
-            frmLoginScreen.Show();
-
             this.Hide();
+            frmSignUp obj = (frmSignUp)Application.OpenForms["frmSignUp"];
+            obj.Hide();
+            frmLogin login = new frmLogin();
+            login.Show();
 
         }
     }

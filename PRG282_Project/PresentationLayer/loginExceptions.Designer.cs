@@ -119,7 +119,7 @@ namespace PRG282_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(365, 238);
+            this.ClientSize = new System.Drawing.Size(376, 252);
             this.Controls.Add(this.lblInvalidUsernamePassword);
             this.Controls.Add(this.lblUserAlreadyExists);
             this.Controls.Add(this.pictureBox1);
@@ -129,6 +129,7 @@ namespace PRG282_Project
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmExceptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frmExceptions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

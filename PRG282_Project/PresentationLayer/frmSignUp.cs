@@ -50,20 +50,15 @@ namespace PRG282_Project
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
+            
+            List<string> ExistingUsers = new List<string>();
 
             try
             {
                 if (loginFields.ValidateFields(loginCredentials.getUserName(tbSignupUsername.Text), loginCredentials.getUserPassword(tbSignupPassword.Text)) == false)
                 {
 
-                    using (TextWriter tr = File.AppendText("LoginCredentials.txt"))
-                    {
-                        tr.WriteLine();
-                        tr.Write(tbSignupUsername.Text + ',' + tbSignupPassword.Text);
-
-                    }
-
-                    frmAccountCreated.Show();
+                   loginFields.UserExists(tbSignupUsername.Text,tbSignupPassword.Text);
 
                 }
                 else
