@@ -9,5 +9,6 @@ namespace PRG282_Project.BusinessLogicLayer
     class Validation
     {
         public string username;
+        public string surname;
     }
 }
