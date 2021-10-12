@@ -82,12 +82,13 @@ namespace PRG282_Project
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(153)))), ((int)(((byte)(176)))));
             this.pictureBox2.Image = global::PRG282_Project.Properties.Resources.loading_bar1;
-            this.pictureBox2.Location = new System.Drawing.Point(-12, -5);
+            this.pictureBox2.Location = new System.Drawing.Point(-7, -7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(391, 259);
+            this.pictureBox2.Size = new System.Drawing.Size(384, 253);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lblUserAlreadyExists
             // 
@@ -127,6 +128,7 @@ namespace PRG282_Project
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmExceptions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

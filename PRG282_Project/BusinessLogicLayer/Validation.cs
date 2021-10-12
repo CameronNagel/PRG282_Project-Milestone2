@@ -8,10 +8,17 @@ namespace PRG282_Project.BusinessLogicLayer
 {
     class Validation
     {
-        public string username;
-        public string surname;
-        public string message;
-        public string age;
-        public string dob;
+        //Check textboxes for username and password and validate if it is empty or not
+        public Boolean ValidateFields(string username, string password)
+        {
+            if (username == string.Empty || password == string.Empty)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

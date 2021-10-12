@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogicLayer\EmptyTextBoxException.cs" />
     <Compile Include="BusinessLogicLayer\Validation.cs" />
     <Compile Include="PresentationLayer\crudExceptions.cs">
       <SubType>Form</SubType>
@@ -119,6 +120,7 @@
     <Compile Include="PresentationLayer\loginAccountCreated.Designer.cs">
       <DependentUpon>loginAccountCreated.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\UserLoginCredentials.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PresentationLayer\crudExceptions.resx">

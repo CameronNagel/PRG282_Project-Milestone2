@@ -26,6 +26,11 @@ namespace PRG282_Project
             customDataGrid();
         }
 
+        public void userLoggedIn(string loginName)
+        {
+            lblUserLoggedIn.Text = loginName;
+        }
+
         public void PopulateSampleData()
         {
             List<ImageList> imageList = new List<ImageList>();

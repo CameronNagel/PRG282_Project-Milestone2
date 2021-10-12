@@ -17,9 +17,28 @@ namespace PRG282_Project
             InitializeComponent();
         }
 
+        //Exception handling
+        public void setEmptyTextBox(string message)
+        {
+            lblFillAllFields.Text = message;
+            lblFillAllFields.Visible = true;
+        }
+
+        public void InvalidUserNamePassWord(string message)
+        {
+            lblInvalidUsernamePassword.Text = message;
+            lblFillAllFields.Visible = false;
+            lblInvalidUsernamePassword.Visible = true;
+        }
+
         private void btnExceptionOK_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
