@@ -106,33 +106,25 @@ namespace PRG282_Project.BusinessLogicLayer
 
 
 
-
         public void UserExists(string tbUsername, string tbPassword)
         {
             loginAccountCreated frmAccountCreated = new loginAccountCreated();
 
             bool found = false;
 
-            using (TextReader reader = File.OpenText("LoginCredentials.txt"))
-            {
-                string txt;
-                string username;
-                
+           
 
-                while ((txt = reader.ReadLine()) != null)
-                {
-                    string[] myArr = txt.Split(',');
-                    username = myArr[0];
+                    var lines = File.ReadAllLines("LoginCredentials.txt");
                     
 
-                    if (username != tbUsername)
+                    if (!lines.Contains(tbUsername + "," + tbPassword))
                     {
                         found = false;
 
                         using (TextWriter tr = File.AppendText("LoginCredentials.txt"))
                         {
                            
-                            tr.WriteLineAsync(tbUsername + ',' + tbPassword);
+                            tr.WriteLine(tbUsername + ',' + tbPassword);
 
                         }
 
@@ -144,17 +136,17 @@ namespace PRG282_Project.BusinessLogicLayer
                         found = true;
                     }
 
-                }
 
-                if (found == true)
-                {
-                    exceptions.InvalidUserNamePassWord("Invalid username or password!");
+
+            if (found == true)
+            {
+                    exceptions.InvalidUserNamePassWord("User Already Exists");
                     exceptions.Show();
-                }
-
             }
 
         }
 
     }
+
 }
+
