@@ -21,11 +21,8 @@ namespace PRG282_Project
         public frmLogin()
         {
             InitializeComponent();
-            
-       
-            
+               
         }
-
         private void pbHidePassword_Click(object sender, EventArgs e)
         {
             tbPassword.UseSystemPasswordChar = true;
