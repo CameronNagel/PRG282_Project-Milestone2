@@ -12,5 +12,6 @@ namespace PRG282_Project.BusinessLogicLayer
         public string surname;
         public string message;
         public string age;
+        public string dob;
     }
 }
