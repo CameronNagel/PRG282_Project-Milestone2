@@ -41,11 +41,7 @@ namespace PRG282_Project
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            string user = tbSignupUsername.Text + "," + tbSignupPassword.Text;
-            newfile.write("LoginCredentials.txt", user);
-            this.Hide();
-            frmLogin newUserLogin = new frmLogin();
-            newUserLogin.Show();
+
         }
 
         private void pbCloseApp_Click(object sender, EventArgs e)
