@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="BusinessLogicLayer\EmptyTextBoxException.cs" />
     <Compile Include="BusinessLogicLayer\Validation.cs" />
+    <Compile Include="DataAccessLayer\DataHandler.cs" />
+    <Compile Include="DataAccessLayer\FileHandler.cs" />
     <Compile Include="PresentationLayer\crudExceptions.cs">
       <SubType>Form</SubType>
     </Compile>
