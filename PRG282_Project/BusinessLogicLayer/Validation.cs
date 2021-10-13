@@ -117,17 +117,15 @@ namespace PRG282_Project.BusinessLogicLayer
                 while ((txt = reader.ReadLine()) != null)
                 {
                     string[] myArr = txt.Split(',');
-                   
 
 
-                            if (myArr.Contains(tbUsername))
-                            {
-                              found = true;
-                               break;
-                            }
+                    if (myArr.Contains(tbUsername))
+                    {
+                        found = true;
+                        break;
+                    }
 
                 }
-
 
             }
 
@@ -147,15 +145,7 @@ namespace PRG282_Project.BusinessLogicLayer
 
             }
 
-
-
-
-
-
-
         }
-
-
 
     }
 
