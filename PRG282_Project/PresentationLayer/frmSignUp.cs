@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +19,7 @@ namespace PRG282_Project
         {
             InitializeComponent();
         }
+        DataAccessLayer.FileHandler newfile = new DataAccessLayer.FileHandler();
 
         Validation validationClass = new Validation();
         frmExceptions exceptions = new frmExceptions();
@@ -50,15 +51,12 @@ namespace PRG282_Project
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            
             List<string> ExistingUsers = new List<string>();
             //bool found = false;
-
             try
             {
                 if (loginFields.ValidateFields(loginCredentials.getUserName(tbSignupUsername.Text), loginCredentials.getUserPassword(tbSignupPassword.Text)) == false)
                 {
-
                     // THIS  checks if the user exists already when creating a new user
                     //
                     loginFields.DoesUserExist(tbSignupUsername.Text,tbSignupPassword.Text);
@@ -77,7 +75,6 @@ namespace PRG282_Project
                 Console.WriteLine(exception.Message);
                 exceptions.Show();
             }
-
         }
 
         private void pbCloseApp_Click(object sender, EventArgs e)

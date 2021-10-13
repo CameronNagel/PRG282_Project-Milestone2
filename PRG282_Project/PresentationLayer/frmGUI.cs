@@ -15,15 +15,18 @@ namespace PRG282_Project
        
         public frmGUI()
         {
-            InitializeComponent();
-          
-            
+            InitializeComponent();        
         }
+        DataAccessLayer.DataHandler handlerc = new DataAccessLayer.DataHandler();
+
 
         private void frmGUI_Load(object sender, EventArgs e)
         {
-            PopulateSampleData();
-            customDataGrid();
+            //PopulateSampleData();
+            //customDataGrid();
+            dgvDisplayStudentData.DataSource = handlerc.DisplayStudents();
+
+
         }
 
         public void userLoggedIn(string loginName)
@@ -72,6 +75,11 @@ namespace PRG282_Project
             this.Hide();
             frmAddStudent addNewStudent = new frmAddStudent();
             addNewStudent.Show();
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

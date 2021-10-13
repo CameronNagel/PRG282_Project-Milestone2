@@ -70,10 +70,11 @@ namespace PRG282_Project
             // lblUserLoggedIn
             // 
             this.lblUserLoggedIn.AutoSize = true;
-            this.lblUserLoggedIn.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserLoggedIn.Location = new System.Drawing.Point(924, 12);
+            this.lblUserLoggedIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserLoggedIn.Location = new System.Drawing.Point(1232, 15);
+            this.lblUserLoggedIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserLoggedIn.Name = "lblUserLoggedIn";
-            this.lblUserLoggedIn.Size = new System.Drawing.Size(56, 13);
+            this.lblUserLoggedIn.Size = new System.Drawing.Size(55, 18);
             this.lblUserLoggedIn.TabIndex = 2;
             this.lblUserLoggedIn.Text = "Aisheel";
             // 
@@ -90,56 +91,76 @@ namespace PRG282_Project
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dgvDisplayStudentData.Location = new System.Drawing.Point(22, 82);
+            this.dgvDisplayStudentData.Location = new System.Drawing.Point(29, 101);
+            this.dgvDisplayStudentData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvDisplayStudentData.Name = "dgvDisplayStudentData";
+            this.dgvDisplayStudentData.RowHeadersWidth = 51;
             this.dgvDisplayStudentData.RowTemplate.Height = 35;
-            this.dgvDisplayStudentData.Size = new System.Drawing.Size(941, 302);
+            this.dgvDisplayStudentData.Size = new System.Drawing.Size(1255, 372);
             this.dgvDisplayStudentData.TabIndex = 3;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "StudentNumber";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Surname";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Image";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "DOB";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Gender";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Phone";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Address";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "ModuleCodes";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
+            this.Column9.Width = 125;
             // 
             // gbNav
             // 
@@ -148,9 +169,11 @@ namespace PRG282_Project
             this.gbNav.Controls.Add(this.btnBackToTop);
             this.gbNav.Controls.Add(this.btnPrevious);
             this.gbNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbNav.Location = new System.Drawing.Point(12, 390);
+            this.gbNav.Location = new System.Drawing.Point(16, 480);
+            this.gbNav.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbNav.Name = "gbNav";
-            this.gbNav.Size = new System.Drawing.Size(960, 65);
+            this.gbNav.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbNav.Size = new System.Drawing.Size(1280, 80);
             this.gbNav.TabIndex = 4;
             this.gbNav.TabStop = false;
             this.gbNav.Text = "Navigation";
@@ -160,10 +183,11 @@ namespace PRG282_Project
             this.btnToLast.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToLast.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(223)))));
             this.btnToLast.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnToLast.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToLast.Location = new System.Drawing.Point(637, 15);
+            this.btnToLast.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToLast.Location = new System.Drawing.Point(849, 18);
+            this.btnToLast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnToLast.Name = "btnToLast";
-            this.btnToLast.Size = new System.Drawing.Size(75, 40);
+            this.btnToLast.Size = new System.Drawing.Size(100, 49);
             this.btnToLast.TabIndex = 21;
             this.btnToLast.Text = ">>";
             this.btnToLast.UseVisualStyleBackColor = true;
@@ -173,10 +197,11 @@ namespace PRG282_Project
             this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(223)))));
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(531, 15);
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(708, 18);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 40);
+            this.btnNext.Size = new System.Drawing.Size(100, 49);
             this.btnNext.TabIndex = 20;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -186,10 +211,11 @@ namespace PRG282_Project
             this.btnBackToTop.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBackToTop.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(223)))));
             this.btnBackToTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackToTop.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackToTop.Location = new System.Drawing.Point(240, 15);
+            this.btnBackToTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackToTop.Location = new System.Drawing.Point(320, 18);
+            this.btnBackToTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBackToTop.Name = "btnBackToTop";
-            this.btnBackToTop.Size = new System.Drawing.Size(75, 40);
+            this.btnBackToTop.Size = new System.Drawing.Size(100, 49);
             this.btnBackToTop.TabIndex = 19;
             this.btnBackToTop.Text = "<<";
             this.btnBackToTop.UseVisualStyleBackColor = true;
@@ -199,13 +225,15 @@ namespace PRG282_Project
             this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrevious.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(223)))));
             this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrevious.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.Location = new System.Drawing.Point(347, 15);
+            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.Location = new System.Drawing.Point(463, 18);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 40);
+            this.btnPrevious.Size = new System.Drawing.Size(100, 49);
             this.btnPrevious.TabIndex = 18;
             this.btnPrevious.Text = "<";
             this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // gbCRUD
             // 
@@ -217,9 +245,11 @@ namespace PRG282_Project
             this.gbCRUD.Controls.Add(this.btnRead);
             this.gbCRUD.Controls.Add(this.btnCreate);
             this.gbCRUD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbCRUD.Location = new System.Drawing.Point(12, 461);
+            this.gbCRUD.Location = new System.Drawing.Point(16, 567);
+            this.gbCRUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbCRUD.Name = "gbCRUD";
-            this.gbCRUD.Size = new System.Drawing.Size(960, 70);
+            this.gbCRUD.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbCRUD.Size = new System.Drawing.Size(1280, 86);
             this.gbCRUD.TabIndex = 5;
             this.gbCRUD.TabStop = false;
             this.gbCRUD.Text = "CRUD Operations and Search";
@@ -229,10 +259,11 @@ namespace PRG282_Project
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Niagara Engraved", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(532, 21);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(709, 26);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 33);
+            this.button1.Size = new System.Drawing.Size(72, 41);
             this.button1.TabIndex = 22;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -243,10 +274,11 @@ namespace PRG282_Project
             this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.SkyBlue;
             this.btnDelete.FlatAppearance.BorderSize = 2;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(791, 16);
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(1055, 20);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(137, 46);
+            this.btnDelete.Size = new System.Drawing.Size(183, 57);
             this.btnDelete.TabIndex = 25;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -254,9 +286,10 @@ namespace PRG282_Project
             // tbSearchForStudent
             // 
             this.tbSearchForStudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSearchForStudent.Location = new System.Drawing.Point(418, 28);
+            this.tbSearchForStudent.Location = new System.Drawing.Point(557, 34);
+            this.tbSearchForStudent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbSearchForStudent.Name = "tbSearchForStudent";
-            this.tbSearchForStudent.Size = new System.Drawing.Size(100, 20);
+            this.tbSearchForStudent.Size = new System.Drawing.Size(133, 22);
             this.tbSearchForStudent.TabIndex = 6;
             // 
             // btnUpdate
@@ -265,10 +298,11 @@ namespace PRG282_Project
             this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnUpdate.FlatAppearance.BorderSize = 2;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(637, 16);
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(849, 20);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(137, 46);
+            this.btnUpdate.Size = new System.Drawing.Size(183, 57);
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -276,10 +310,11 @@ namespace PRG282_Project
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch.Location = new System.Drawing.Point(365, 31);
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(487, 38);
+            this.lblSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(49, 13);
+            this.lblSearch.Size = new System.Drawing.Size(55, 18);
             this.lblSearch.TabIndex = 7;
             this.lblSearch.Text = "Search";
             // 
@@ -289,10 +324,11 @@ namespace PRG282_Project
             this.btnRead.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(105)))), ((int)(((byte)(82)))));
             this.btnRead.FlatAppearance.BorderSize = 2;
             this.btnRead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRead.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRead.Location = new System.Drawing.Point(193, 16);
+            this.btnRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRead.Location = new System.Drawing.Point(257, 20);
+            this.btnRead.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(137, 46);
+            this.btnRead.Size = new System.Drawing.Size(183, 57);
             this.btnRead.TabIndex = 23;
             this.btnRead.Text = "Read";
             this.btnRead.UseVisualStyleBackColor = true;
@@ -303,10 +339,11 @@ namespace PRG282_Project
             this.btnCreate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(182)))), ((int)(((byte)(223)))));
             this.btnCreate.FlatAppearance.BorderSize = 2;
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreate.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(33, 16);
+            this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.Location = new System.Drawing.Point(44, 20);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(137, 46);
+            this.btnCreate.Size = new System.Drawing.Size(183, 57);
             this.btnCreate.TabIndex = 22;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -316,9 +353,10 @@ namespace PRG282_Project
             // 
             this.pbLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbLogout.Image = global::PRG282_Project.Properties.Resources.Logout;
-            this.pbLogout.Location = new System.Drawing.Point(458, 3);
+            this.pbLogout.Location = new System.Drawing.Point(611, 4);
+            this.pbLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbLogout.Name = "pbLogout";
-            this.pbLogout.Size = new System.Drawing.Size(27, 28);
+            this.pbLogout.Size = new System.Drawing.Size(36, 34);
             this.pbLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogout.TabIndex = 43;
             this.pbLogout.TabStop = false;
@@ -328,9 +366,10 @@ namespace PRG282_Project
             // 
             this.pbCloseApp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbCloseApp.Image = global::PRG282_Project.Properties.Resources.CloseApp;
-            this.pbCloseApp.Location = new System.Drawing.Point(489, 3);
+            this.pbCloseApp.Location = new System.Drawing.Point(652, 4);
+            this.pbCloseApp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbCloseApp.Name = "pbCloseApp";
-            this.pbCloseApp.Size = new System.Drawing.Size(29, 28);
+            this.pbCloseApp.Size = new System.Drawing.Size(39, 34);
             this.pbCloseApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCloseApp.TabIndex = 42;
             this.pbCloseApp.TabStop = false;
@@ -339,9 +378,10 @@ namespace PRG282_Project
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PRG282_Project.Properties.Resources.GUI_Profile;
-            this.pictureBox2.Location = new System.Drawing.Point(884, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(1179, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 28);
+            this.pictureBox2.Size = new System.Drawing.Size(64, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -349,19 +389,20 @@ namespace PRG282_Project
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PRG282_Project.Properties.Resources.bc_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 61);
+            this.pictureBox1.Size = new System.Drawing.Size(256, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // frmGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 540);
+            this.ClientSize = new System.Drawing.Size(1309, 655);
             this.Controls.Add(this.pbLogout);
             this.Controls.Add(this.pbCloseApp);
             this.Controls.Add(this.gbCRUD);
@@ -371,8 +412,9 @@ namespace PRG282_Project
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1000, 579);
-            this.MinimumSize = new System.Drawing.Size(1000, 579);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(1327, 702);
+            this.MinimumSize = new System.Drawing.Size(1327, 702);
             this.Name = "frmGUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Information System";
