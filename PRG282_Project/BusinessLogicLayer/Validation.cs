@@ -121,18 +121,12 @@ namespace PRG282_Project.BusinessLogicLayer
                     ExistingUsername = myArr[0];
                     ExistingPassword = myArr[1];
 
-                    if (ExistingUsername == tbUsername && ExistingPassword == tbPassword)
-                    {
-                        found = true;
-                        break;
-                    }
-                    else
-                    {
-                        found = false;
-                        
-                    }
 
-                   
+                            if (myArr.Contains(tbUsername))
+                            {
+                              found = true;
+                               break;
+                            }
 
                 }
 
