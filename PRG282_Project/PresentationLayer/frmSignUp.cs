@@ -52,13 +52,60 @@ namespace PRG282_Project
         {
             
             List<string> ExistingUsers = new List<string>();
+            //bool found = false;
 
             try
             {
                 if (loginFields.ValidateFields(loginCredentials.getUserName(tbSignupUsername.Text), loginCredentials.getUserPassword(tbSignupPassword.Text)) == false)
                 {
 
-                   loginFields.UserExists(tbSignupUsername.Text,tbSignupPassword.Text);
+                    loginFields.DoesUserExist(tbSignupUsername.Text,tbSignupPassword.Text);
+
+
+                    //using (TextReader reader = File.OpenText("LoginCredentials.txt"))
+                    //{
+                    //    string txt;
+                    //    //string ExistingUsername;
+                    //    //string ExistingPassword;
+
+                    //    while ((txt = reader.ReadLine()) != null)
+                    //    {
+                    //        string[] myArr = txt.Split(',');
+                    //        //ExistingUsername = myArr[0];
+                    //        //ExistingPassword = myArr[1];
+
+
+
+                    //        if (myArr.Contains(tbSignupUsername.Text))
+                    //        {
+                    //            found = true;
+                    //            break;
+                    //        }
+                            
+
+                    //    }
+
+
+                    //}
+
+                    //if (found == true)
+                    //{
+                    //    exceptions.UserAlreadyExists("User Already Exists");
+                    //    exceptions.Show();
+                    //}
+                    //else
+                    //{
+                    //    using (TextWriter tr = File.AppendText("LoginCredentials.txt"))
+                    //    {
+
+                    //        tr.WriteLine(tbSignupUsername.Text + "," + tbSignupPassword.Text);
+
+                    //    }
+
+                    //    frmAccountCreated.Show();
+                    //}
+
+
 
                 }
                 else

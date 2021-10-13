@@ -13,6 +13,7 @@ namespace PRG282_Project.BusinessLogicLayer
     {
 
         frmExceptions exceptions = new frmExceptions();
+        loginAccountCreated frmAccountCreated = new loginAccountCreated();
 
 
         //Check textboxes for username and password and validate if it is empty or not
@@ -104,47 +105,68 @@ namespace PRG282_Project.BusinessLogicLayer
 
 
 
-
-
-        public void UserExists(string tbUsername, string tbPassword)
+        public void DoesUserExist(string tbUsername, string tbPassword)
         {
-            loginAccountCreated frmAccountCreated = new loginAccountCreated();
-
             bool found = false;
 
-           
+            using (TextReader reader = File.OpenText("LoginCredentials.txt"))
+            {
+                string txt;
+                string ExistingUsername;
+                string ExistingPassword;
 
-                    var lines = File.ReadAllLines("LoginCredentials.txt");
-                    
+                while ((txt = reader.ReadLine()) != null)
+                {
+                    string[] myArr = txt.Split(',');
+                    ExistingUsername = myArr[0];
+                    ExistingPassword = myArr[1];
 
-                    if (!lines.Contains(tbUsername + "," + tbPassword))
+                    if (ExistingUsername == tbUsername && ExistingPassword == tbPassword)
                     {
-                        found = false;
-
-                        using (TextWriter tr = File.AppendText("LoginCredentials.txt"))
-                        {
-                           
-                            tr.WriteLine(tbUsername + ',' + tbPassword);
-
-                        }
-
-                        frmAccountCreated.Show();
-
+                        found = true;
+                        break;
                     }
                     else
                     {
-                        found = true;
+                        found = false;
+                        
                     }
 
+                   
 
+                }
+
+
+            }
 
             if (found == true)
             {
-                    exceptions.InvalidUserNamePassWord("User Already Exists");
-                    exceptions.Show();
+                exceptions.InvalidUserNamePassWord("User Already Exists!");
+                exceptions.Show();
+                
+            }
+            else
+            {
+
+                using (TextWriter tr = File.AppendText("LoginCredentials.txt"))
+                {
+
+                    tr.WriteLine(tbUsername + "," + tbPassword);
+
+                }
+
+                frmAccountCreated.Show();
             }
 
+
+
+
+
+
+
         }
+
+
 
     }
 
