@@ -11,7 +11,7 @@ namespace PRG282_Project.DataAccessLayer
 {
     class DataHandler
     {
-        string con = "server=. ;Initial Catalog= PRG282_Milestone2Demo; Integrated Security=SSPI";
+        string con = "server=. ;Initial Catalog= BCDatabase; Integrated Security=SSPI";
         public DataHandler() { }
 
         public DataTable DisplayStudents()
