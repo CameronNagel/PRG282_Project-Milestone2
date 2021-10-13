@@ -73,9 +73,9 @@ namespace PRG282_Project.DataAccessLayer
                 cmd.Parameters.AddWithValue("@DOB", student_dob);
                 cmd.Parameters.AddWithValue("@Gender", student_gender);
                 cmd.Parameters.AddWithValue("@Phone", student_phone);
-                cmd.Parameters.AddWithValue("@student_city", student_city);
-                cmd.Parameters.AddWithValue("@student_city", student_province);
-                cmd.Parameters.AddWithValue("@student_city", student_street);
+                cmd.Parameters.AddWithValue("@City", student_city);
+                cmd.Parameters.AddWithValue("Province", student_province);
+                cmd.Parameters.AddWithValue("@Street", student_street);
 
                 connect.Open();
                 cmd.ExecuteNonQuery();
@@ -99,7 +99,7 @@ namespace PRG282_Project.DataAccessLayer
         }
 
         public void AddStudent(int student_number, string student_name, DateTime student_dob, string student_gender,
-                           string student_phone, string student_address)
+                           string student_phone, string student_city, string student_province, string student_street)
         {
             using (SqlConnection connect = new SqlConnection(con))
             {
@@ -113,7 +113,9 @@ namespace PRG282_Project.DataAccessLayer
                     cmd.Parameters.AddWithValue("@DOB", student_dob);
                     cmd.Parameters.AddWithValue("@Gender", student_gender);
                     cmd.Parameters.AddWithValue("@Phone", student_phone);
-                    cmd.Parameters.AddWithValue("@Address", student_address);
+                    cmd.Parameters.AddWithValue("@City", student_city);
+                    cmd.Parameters.AddWithValue("Province", student_province);
+                    cmd.Parameters.AddWithValue("@Street", student_street);
 
                     MessageBox.Show("Student has been stored");
 
