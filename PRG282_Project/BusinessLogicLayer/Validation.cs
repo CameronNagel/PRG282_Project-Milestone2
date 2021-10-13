@@ -142,14 +142,11 @@ namespace PRG282_Project.BusinessLogicLayer
             else
             {
 
-                using (TextWriter tr = File.AppendText("LoginCredentials.txt"))
-                {
+                File.AppendAllText("LoginCredentials.txt",tbUsername + "," + tbPassword);
 
-                    tr.WriteLine(tbUsername + "," + tbPassword);
-
-                }
-
+                
                 frmAccountCreated.Show();
+
             }
 
 
