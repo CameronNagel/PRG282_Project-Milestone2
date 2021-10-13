@@ -84,7 +84,7 @@ namespace PRG282_Project
             this.pictureBox2.Image = global::PRG282_Project.Properties.Resources.loading_bar1;
             this.pictureBox2.Location = new System.Drawing.Point(-7, -7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(384, 253);
+            this.pictureBox2.Size = new System.Drawing.Size(382, 258);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
@@ -107,7 +107,7 @@ namespace PRG282_Project
             this.lblInvalidUsernamePassword.AutoSize = true;
             this.lblInvalidUsernamePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(153)))), ((int)(((byte)(176)))));
             this.lblInvalidUsernamePassword.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInvalidUsernamePassword.Location = new System.Drawing.Point(61, 87);
+            this.lblInvalidUsernamePassword.Location = new System.Drawing.Point(62, 87);
             this.lblInvalidUsernamePassword.Name = "lblInvalidUsernamePassword";
             this.lblInvalidUsernamePassword.Size = new System.Drawing.Size(239, 13);
             this.lblInvalidUsernamePassword.TabIndex = 27;
@@ -119,7 +119,7 @@ namespace PRG282_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(365, 238);
+            this.ClientSize = new System.Drawing.Size(376, 252);
             this.Controls.Add(this.lblInvalidUsernamePassword);
             this.Controls.Add(this.lblUserAlreadyExists);
             this.Controls.Add(this.pictureBox1);
@@ -129,6 +129,7 @@ namespace PRG282_Project
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmExceptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frmExceptions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
