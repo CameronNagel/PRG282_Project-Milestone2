@@ -21,11 +21,8 @@ namespace PRG282_Project
         public frmLogin()
         {
             InitializeComponent();
-            
-       
-            
+               
         }
-
         private void pbHidePassword_Click(object sender, EventArgs e)
         {
             tbPassword.UseSystemPasswordChar = true;
@@ -56,33 +53,47 @@ namespace PRG282_Project
             {
                 if (loginFields.ValidateFields(loginCredentials.getUserName(tbUsername.Text), loginCredentials.getUserPassword(tbPassword.Text)) == false)
                 {
-                    using (TextReader reader = File.OpenText("LoginCredentials.txt"))
-                    {
-                        string txt;
-                        string username;
-                        string password;
 
-                        while ((txt = reader.ReadLine()) != null)
-                        {
-                            string[] myArr = txt.Split(',');
-                            username = myArr[0];
-                            password = myArr[1];
+                    loginFields.CheckLoginDetails(tbUsername.Text,tbPassword.Text);
 
-                            if (username == tbUsername.Text && password == tbPassword.Text)
-                            {
-                                frmGUI studentInfoSystem = new frmGUI();
-                                studentInfoSystem.userLoggedIn(username);
-                                this.Hide();
-                                studentInfoSystem.Show();
-                                break;
-                            }
-                            else
-                            {
-                                exceptions.InvalidUserNamePassWord("Invalid username or password!");
-                                exceptions.Show();
-                            }
-                        }
-                    }
+
+
+                    //List<string> ExistingUsers = new List<string>();
+                    //ExistingUsers = loginFields.ReadTextFile();
+
+                    //loginFields.CheckLogInDetails(ExistingUsers,tbUsername.Text,tbPassword.Text);
+
+                    //loginFields.CheckLogInDetails(ExistingUsers,tbUsername.Text,tbPassword.Text);
+                    
+
+
+                    //using (TextReader reader = File.OpenText("LoginCredentials.txt"))
+                    //{
+                    //    string txt;
+                    //    string username;
+                    //    string password;
+
+                    //    while ((txt = reader.ReadLine()) != null)
+                    //    {
+                    //        string[] myArr = txt.Split(',');
+                    //        username = myArr[0];
+                    //        password = myArr[1];
+
+                    //        if (username == tbUsername.Text && password == tbPassword.Text)
+                    //        {
+                    //            frmGUI studentInfoSystem = new frmGUI();
+                    //            studentInfoSystem.userLoggedIn(username);
+                    //            // <--
+                    //            studentInfoSystem.Show();
+                    //            break;  // <--
+                    //        }
+                    //        else
+                    //        {
+                    //            exceptions.InvalidUserNamePassWord("Invalid username or password!");
+                    //            exceptions.Show();
+                    //        }
+                    //    }
+                    //}
                 }
                 else
                 {
@@ -100,7 +111,7 @@ namespace PRG282_Project
         private void frmLogin_Load(object sender, EventArgs e)
         {
             
-          
+            
         }
 
         private void pbCloseApp_Click(object sender, EventArgs e)
