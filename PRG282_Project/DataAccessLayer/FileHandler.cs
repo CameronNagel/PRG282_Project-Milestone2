@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 namespace PRG282_Project.DataAccessLayer
 {
@@ -11,9 +12,11 @@ namespace PRG282_Project.DataAccessLayer
     {
         public void write(string filepath, string user)    
         {
+            //this code is meant to see if the file mentioned exists, and if it does not then it will create the path
             FileStream newStream = new FileStream(filepath, FileMode.OpenOrCreate);
             StreamWriter newWriter = new StreamWriter(newStream);
-            newWriter.Write(user);
+            MessageBox.Show("User registered");
+            newWriter.Write(user); 
             newWriter.Close();
             newStream.Close();
         }

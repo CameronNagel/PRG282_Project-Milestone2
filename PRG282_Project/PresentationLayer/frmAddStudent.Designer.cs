@@ -86,7 +86,7 @@ namespace PRG282_Project
             this.groupBox1.Controls.Add(this.lblStudentNumber);
             this.groupBox1.Controls.Add(this.lblStudentSurname);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
             this.groupBox1.Location = new System.Drawing.Point(17, 13);
             this.groupBox1.Name = "groupBox1";
@@ -100,7 +100,7 @@ namespace PRG282_Project
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Niagara Engraved", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(217, 114);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(205, 25);
@@ -112,105 +112,108 @@ namespace PRG282_Project
             // 
             this.lblStudentImage.AutoSize = true;
             this.lblStudentImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentImage.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentImage.ForeColor = System.Drawing.Color.White;
             this.lblStudentImage.Location = new System.Drawing.Point(28, 126);
             this.lblStudentImage.Name = "lblStudentImage";
-            this.lblStudentImage.Size = new System.Drawing.Size(47, 13);
+            this.lblStudentImage.Size = new System.Drawing.Size(54, 20);
             this.lblStudentImage.TabIndex = 18;
             this.lblStudentImage.Text = "Image";
             // 
             // tbProvinceAddress
             // 
             this.tbProvinceAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbProvinceAddress.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProvinceAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbProvinceAddress.Location = new System.Drawing.Point(217, 280);
             this.tbProvinceAddress.Name = "tbProvinceAddress";
-            this.tbProvinceAddress.Size = new System.Drawing.Size(205, 21);
+            this.tbProvinceAddress.Size = new System.Drawing.Size(205, 26);
             this.tbProvinceAddress.TabIndex = 17;
             // 
             // tbCityAddress
             // 
             this.tbCityAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbCityAddress.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCityAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCityAddress.Location = new System.Drawing.Point(217, 253);
             this.tbCityAddress.Name = "tbCityAddress";
-            this.tbCityAddress.Size = new System.Drawing.Size(205, 21);
+            this.tbCityAddress.Size = new System.Drawing.Size(205, 26);
             this.tbCityAddress.TabIndex = 16;
             // 
             // tbStreetAddress
             // 
             this.tbStreetAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbStreetAddress.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbStreetAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbStreetAddress.Location = new System.Drawing.Point(217, 226);
             this.tbStreetAddress.Name = "tbStreetAddress";
-            this.tbStreetAddress.Size = new System.Drawing.Size(205, 21);
+            this.tbStreetAddress.Size = new System.Drawing.Size(205, 26);
             this.tbStreetAddress.TabIndex = 15;
             // 
             // cbGender
             // 
-            this.cbGender.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGender.FormattingEnabled = true;
+            this.cbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.cbGender.Location = new System.Drawing.Point(217, 172);
             this.cbGender.Name = "cbGender";
-            this.cbGender.Size = new System.Drawing.Size(205, 21);
+            this.cbGender.Size = new System.Drawing.Size(205, 28);
             this.cbGender.TabIndex = 14;
             // 
             // tbPhoneNumber
             // 
             this.tbPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbPhoneNumber.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPhoneNumber.Location = new System.Drawing.Point(217, 199);
             this.tbPhoneNumber.Name = "tbPhoneNumber";
-            this.tbPhoneNumber.Size = new System.Drawing.Size(205, 21);
+            this.tbPhoneNumber.Size = new System.Drawing.Size(205, 26);
             this.tbPhoneNumber.TabIndex = 13;
             // 
             // dtpStudentDOB
             // 
             this.dtpStudentDOB.CustomFormat = "dd/MM/yyy";
-            this.dtpStudentDOB.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpStudentDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStudentDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpStudentDOB.Location = new System.Drawing.Point(217, 145);
             this.dtpStudentDOB.Name = "dtpStudentDOB";
-            this.dtpStudentDOB.Size = new System.Drawing.Size(205, 21);
+            this.dtpStudentDOB.Size = new System.Drawing.Size(205, 26);
             this.dtpStudentDOB.TabIndex = 11;
             // 
             // tbStudentSurname
             // 
             this.tbStudentSurname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbStudentSurname.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbStudentSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbStudentSurname.Location = new System.Drawing.Point(217, 89);
             this.tbStudentSurname.Name = "tbStudentSurname";
-            this.tbStudentSurname.Size = new System.Drawing.Size(205, 21);
+            this.tbStudentSurname.Size = new System.Drawing.Size(205, 26);
             this.tbStudentSurname.TabIndex = 10;
             // 
             // tbStudentName
             // 
             this.tbStudentName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbStudentName.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbStudentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbStudentName.Location = new System.Drawing.Point(217, 62);
             this.tbStudentName.Name = "tbStudentName";
-            this.tbStudentName.Size = new System.Drawing.Size(205, 21);
+            this.tbStudentName.Size = new System.Drawing.Size(205, 26);
             this.tbStudentName.TabIndex = 9;
             // 
             // tbStudentNumber
             // 
             this.tbStudentNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbStudentNumber.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbStudentNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbStudentNumber.Location = new System.Drawing.Point(217, 35);
             this.tbStudentNumber.Name = "tbStudentNumber";
-            this.tbStudentNumber.Size = new System.Drawing.Size(205, 21);
+            this.tbStudentNumber.Size = new System.Drawing.Size(205, 26);
             this.tbStudentNumber.TabIndex = 8;
             // 
             // lblStudentProvince
             // 
             this.lblStudentProvince.AutoSize = true;
             this.lblStudentProvince.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentProvince.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentProvince.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentProvince.ForeColor = System.Drawing.Color.White;
             this.lblStudentProvince.Location = new System.Drawing.Point(28, 288);
             this.lblStudentProvince.Name = "lblStudentProvince";
-            this.lblStudentProvince.Size = new System.Drawing.Size(71, 13);
+            this.lblStudentProvince.Size = new System.Drawing.Size(74, 20);
             this.lblStudentProvince.TabIndex = 7;
             this.lblStudentProvince.Text = "Province";
             // 
@@ -218,11 +221,11 @@ namespace PRG282_Project
             // 
             this.lblStudentStreet.AutoSize = true;
             this.lblStudentStreet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentStreet.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentStreet.ForeColor = System.Drawing.Color.White;
             this.lblStudentStreet.Location = new System.Drawing.Point(28, 234);
             this.lblStudentStreet.Name = "lblStudentStreet";
-            this.lblStudentStreet.Size = new System.Drawing.Size(55, 13);
+            this.lblStudentStreet.Size = new System.Drawing.Size(54, 20);
             this.lblStudentStreet.TabIndex = 6;
             this.lblStudentStreet.Text = "Street";
             // 
@@ -230,11 +233,11 @@ namespace PRG282_Project
             // 
             this.lblStudentCity.AutoSize = true;
             this.lblStudentCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentCity.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentCity.ForeColor = System.Drawing.Color.White;
             this.lblStudentCity.Location = new System.Drawing.Point(28, 261);
             this.lblStudentCity.Name = "lblStudentCity";
-            this.lblStudentCity.Size = new System.Drawing.Size(95, 13);
+            this.lblStudentCity.Size = new System.Drawing.Size(93, 20);
             this.lblStudentCity.TabIndex = 4;
             this.lblStudentCity.Text = "City / Town";
             // 
@@ -242,11 +245,11 @@ namespace PRG282_Project
             // 
             this.lblStudentGender.AutoSize = true;
             this.lblStudentGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentGender.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentGender.ForeColor = System.Drawing.Color.White;
             this.lblStudentGender.Location = new System.Drawing.Point(28, 180);
             this.lblStudentGender.Name = "lblStudentGender";
-            this.lblStudentGender.Size = new System.Drawing.Size(55, 13);
+            this.lblStudentGender.Size = new System.Drawing.Size(64, 20);
             this.lblStudentGender.TabIndex = 4;
             this.lblStudentGender.Text = "Gender";
             // 
@@ -254,11 +257,11 @@ namespace PRG282_Project
             // 
             this.lblStudentPhoneNumber.AutoSize = true;
             this.lblStudentPhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentPhoneNumber.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentPhoneNumber.ForeColor = System.Drawing.Color.White;
             this.lblStudentPhoneNumber.Location = new System.Drawing.Point(28, 207);
             this.lblStudentPhoneNumber.Name = "lblStudentPhoneNumber";
-            this.lblStudentPhoneNumber.Size = new System.Drawing.Size(103, 13);
+            this.lblStudentPhoneNumber.Size = new System.Drawing.Size(120, 20);
             this.lblStudentPhoneNumber.TabIndex = 5;
             this.lblStudentPhoneNumber.Text = "Phone Number";
             // 
@@ -266,11 +269,11 @@ namespace PRG282_Project
             // 
             this.lblStudentDOB.AutoSize = true;
             this.lblStudentDOB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentDOB.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentDOB.ForeColor = System.Drawing.Color.White;
             this.lblStudentDOB.Location = new System.Drawing.Point(28, 153);
             this.lblStudentDOB.Name = "lblStudentDOB";
-            this.lblStudentDOB.Size = new System.Drawing.Size(111, 13);
+            this.lblStudentDOB.Size = new System.Drawing.Size(109, 20);
             this.lblStudentDOB.TabIndex = 3;
             this.lblStudentDOB.Text = "Date Of Birth";
             // 
@@ -278,11 +281,11 @@ namespace PRG282_Project
             // 
             this.lblStudentName.AutoSize = true;
             this.lblStudentName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentName.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentName.ForeColor = System.Drawing.Color.White;
             this.lblStudentName.Location = new System.Drawing.Point(28, 70);
             this.lblStudentName.Name = "lblStudentName";
-            this.lblStudentName.Size = new System.Drawing.Size(39, 13);
+            this.lblStudentName.Size = new System.Drawing.Size(53, 20);
             this.lblStudentName.TabIndex = 0;
             this.lblStudentName.Text = "Name";
             // 
@@ -290,11 +293,11 @@ namespace PRG282_Project
             // 
             this.lblStudentNumber.AutoSize = true;
             this.lblStudentNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentNumber.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentNumber.ForeColor = System.Drawing.Color.White;
             this.lblStudentNumber.Location = new System.Drawing.Point(28, 43);
             this.lblStudentNumber.Name = "lblStudentNumber";
-            this.lblStudentNumber.Size = new System.Drawing.Size(119, 13);
+            this.lblStudentNumber.Size = new System.Drawing.Size(130, 20);
             this.lblStudentNumber.TabIndex = 2;
             this.lblStudentNumber.Text = "Student Number";
             // 
@@ -302,11 +305,11 @@ namespace PRG282_Project
             // 
             this.lblStudentSurname.AutoSize = true;
             this.lblStudentSurname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
-            this.lblStudentSurname.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentSurname.ForeColor = System.Drawing.Color.White;
             this.lblStudentSurname.Location = new System.Drawing.Point(28, 97);
             this.lblStudentSurname.Name = "lblStudentSurname";
-            this.lblStudentSurname.Size = new System.Drawing.Size(63, 13);
+            this.lblStudentSurname.Size = new System.Drawing.Size(76, 20);
             this.lblStudentSurname.TabIndex = 1;
             this.lblStudentSurname.Text = "Surname";
             // 
@@ -324,7 +327,7 @@ namespace PRG282_Project
             this.btnAddNewStudent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddNewStudent.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(223)))));
             this.btnAddNewStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewStudent.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewStudent.Location = new System.Drawing.Point(72, 462);
             this.btnAddNewStudent.Name = "btnAddNewStudent";
             this.btnAddNewStudent.Size = new System.Drawing.Size(170, 49);
@@ -360,7 +363,7 @@ namespace PRG282_Project
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(178)))), ((int)(((byte)(223)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Niagara Engraved", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(248, 462);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 49);
@@ -370,16 +373,16 @@ namespace PRG282_Project
             // 
             // frmAddStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(506, 540);
+            this.ClientSize = new System.Drawing.Size(504, 532);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAddNewStudent);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbBackToGUI);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("OCR A Extended", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(522, 579);
             this.MinimumSize = new System.Drawing.Size(522, 579);

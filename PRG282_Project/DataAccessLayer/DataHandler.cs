@@ -5,13 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace PRG282_Project.DataAccessLayer
 {
     class DataHandler
     {
-        string con = "server=. ;Initial Catalog= BCDatabase; Integrated Security=SSPI";
+        string con = "server=. ;Initial Catalog= PRG282_Milestone2Demo; Integrated Security=SSPI";
         public DataHandler() { }
+
+        public DataTable DisplayStudents()
+        {
+            SqlConnection connect = new SqlConnection(con);
+            SqlDataAdapter adapt = new SqlDataAdapter("spGetStudents", connect);
+            adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            adapt.Fill(dt);
+            return dt;
+
+        }
 
         public void DeleteStudent(int student_number)
         {
@@ -43,22 +55,33 @@ namespace PRG282_Project.DataAccessLayer
             }
         }
 
-        public void AddStudent(int student_number, string student_name, DateTime student_dob, string student_gender,
+        public void AddStudent(int student_number, string student_name, string student_surname, DateTime student_dob, string student_gender,
                            string student_phone, string student_address)
         {
             using (SqlConnection connect = new SqlConnection(con))
             {
-                SqlCommand cmd = new SqlCommand("spAddStudent", connect);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@number", student_number);
-                cmd.Parameters.AddWithValue("@student_name", student_name);
-                cmd.Parameters.AddWithValue("@student_dob", student_dob);
-                cmd.Parameters.AddWithValue("@student_gender", student_gender);
-                cmd.Parameters.AddWithValue("@student_phone", student_phone);
-                cmd.Parameters.AddWithValue("@student_address", student_address);
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("spAddStudent", connect);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@number", student_number);
+                    cmd.Parameters.AddWithValue("@student_name", student_name);
+                    cmd.Parameters.AddWithValue("@student_surname", student_surname);
+                    cmd.Parameters.AddWithValue("@student_dob", student_dob);
+                    cmd.Parameters.AddWithValue("@student_gender", student_gender);
+                    cmd.Parameters.AddWithValue("@student_phone", student_phone);
+                    cmd.Parameters.AddWithValue("@student_address", student_address);
 
-                connect.Open();
-                cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data has been stored");
+
+                    connect.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Data was not stored");
+                }
             }
         }
         public void AddModule(string module_code, string module_name, string module_description, string module_resources)

@@ -16,6 +16,7 @@ namespace PRG282_Project
         {
             InitializeComponent();
         }
+        DataAccessLayer.FileHandler newfile = new DataAccessLayer.FileHandler();
 
         private void pbSignUpHidePassword_Click(object sender, EventArgs e)
         {
@@ -40,6 +41,8 @@ namespace PRG282_Project
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
+            string user = tbSignupUsername.Text + "," + tbSignupPassword.Text;
+            newfile.write("LoginCredentials.txt", user);
             this.Hide();
             frmLogin newUserLogin = new frmLogin();
             newUserLogin.Show();

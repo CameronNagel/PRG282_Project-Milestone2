@@ -16,9 +16,12 @@ namespace PRG282_Project
         {
             InitializeComponent();
         }
+        DataAccessLayer.DataHandler handler = new DataAccessLayer.DataHandler();
 
         private void btnAddNewStudent_Click(object sender, EventArgs e)
         {
+
+            handler.AddStudent(int.Parse(tbStudentNumber.Text), tbStudentName.Text, tbStudentSurname.Text, dtpStudentDOB.Value, cbGender.SelectedItem.ToString(), tbPhoneNumber.Text, tbStreetAddress.Text);
             this.Close();
             frmAddStudentModules addModule = new frmAddStudentModules();
             addModule.Show();
