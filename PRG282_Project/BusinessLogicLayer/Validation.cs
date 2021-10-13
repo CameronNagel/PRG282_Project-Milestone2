@@ -112,14 +112,12 @@ namespace PRG282_Project.BusinessLogicLayer
             using (TextReader reader = File.OpenText("LoginCredentials.txt"))
             {
                 string txt;
-                string ExistingUsername;
-                string ExistingPassword;
+              
 
                 while ((txt = reader.ReadLine()) != null)
                 {
                     string[] myArr = txt.Split(',');
-                    ExistingUsername = myArr[0];
-                    ExistingPassword = myArr[1];
+                   
 
 
                             if (myArr.Contains(tbUsername))
